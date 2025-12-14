@@ -51,7 +51,7 @@ contract ERC20 is IERC20 {
         balanceOf[recipient] += amount;
         emit Transfer(sender, recipient, amount);
         return true;
-    }
+    } 
 
     // --- Internal Functions --- 
 
@@ -76,7 +76,7 @@ contract ERC20 is IERC20 {
         _mint(to, amount);
     }
 
-    /// @notice Allows any user to burn their own tokens to reduce supply.
+    /// @notice Allows any user to burn their o wn tokens to reduce supply.
     /// @dev Uses msg.sender to ensure users can only burn their own funds.
     /// @param amount The amount of tokens to burn.
     function burn(uint256 amount) external {
