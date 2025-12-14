@@ -53,12 +53,6 @@ contract ERC20 is IERC20 {
         return true;
     }
 
-    // --- Public Functions ---
-
-    function totalAmountAddress() public view returns (uint256) {
-        return balanceOf[msg.sender];
-    }
-
     // --- Internal Functions --- 
 
     function _mint(address to, uint256 amount) internal {
